@@ -1,6 +1,5 @@
 # This creates a jetty jre8 image containing obp-api-1.0.war. 
 # It is a multi stage build, meaning a small-ish image is the end result. 
-
 FROM alpine:latest as repo
 # Get repo fron github, store as stage 'repo'
 RUN apk add --no-cache git
